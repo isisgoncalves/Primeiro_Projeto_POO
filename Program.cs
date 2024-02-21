@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿class Program
+{
+    static void Main()
+    {
+        string nome = Console.ReadLine();
+
+        int idade = int.Parse(Console.ReadLine());
+
+        Pessoa pessoa = new Pessoa(nome, idade);
+
+        Console.WriteLine($"Nome: {pessoa.GetNome()}, Idade: {pessoa.GetIdade()}"); 
+
+    }
+}
